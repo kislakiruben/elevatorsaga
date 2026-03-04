@@ -67,7 +67,8 @@ $(function() {
             }
         });
 
-        var codeObj = getCodeObjFromCode(codeString);
+        eval(codeString);
+        var codeObj = solution;
         app.worldController.start(app.world, codeObj, window.requestAnimationFrame, true);
     };
 
